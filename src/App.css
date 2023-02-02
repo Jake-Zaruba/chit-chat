@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/**** REGISTER PAGE ****/
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe0c1;
+  height: 100vh;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.logo {
+  color: orange;
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+
+.title {
+  color: orange;
+  font-size: 1.4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem 6rem;
+}
+
+.registerForm input {
+  padding: 1.6rem;
+  border: none;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.714);
+  width: 20rem;
+}
+
+.file {
+  border: none;
+}
+
+::placeholder {
+  color: rgba(51, 51, 51, 0.424);
+}
+
+p {
+  color: orange;
+}
+
+.addImage {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: none;
+  stroke: #ffe0c1;
+}
+
+.upload {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 0.8rem;
+  font-size: 0.8rem;
+  color: orange;
+}
+
+/**** HOME PAGE ****/
+
+.home {
+  background-color: #ffe0c1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  border: 2px solid orange;
+  border-radius: 2rem;
+  width: 65%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #ffc155;
+}
+
+.chat {
+  flex: 2;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orange;
+  height: 5rem;
+  padding: 1rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navbar .logo {
+  font-size: 1rem;
+  color: #333;
+}
+
+.profilePic {
+  background-color: #ffe0c1;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user button {
+  font-size: 0.6rem;
+  background-color: #ffe0c1;
+  color: #333;
+  border: none;
+}
+
+.userChat {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.userChat:hover {
+  background-color: #dda84b;
+}
+
+.userChat img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userChatInfo span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.userChatInfo p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.chatInfo {
+  height: 5rem;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatIcons {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.navbar .search {
+  border-bottom: 2px solid grey;
+}
+
+.searchForm {
+  padding: 1rem;
+}
+
+.searchForm input {
+  padding: none;
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  color: #333;
+  outline: none;
+}
+
+.messages {
+  background-color: #fef0dd;
+  padding: 1rem;
+  height: calc(100% - 10rem);
+}
+
+.input {
+  height: 5rem;
+  background-color: white;
+  padding: 1rem;
+}
