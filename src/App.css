@@ -108,7 +108,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: orange;
+  background-color: #eb9902;
   height: 5rem;
   padding: 1rem;
 }
@@ -208,10 +208,66 @@ p {
   background-color: #fef0dd;
   padding: 1rem;
   height: calc(100% - 10rem);
+  overflow: scroll;
 }
 
 .input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 5rem;
   background-color: white;
-  padding: 1rem;
+  padding: 0.8rem;
+}
+
+.input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.message {
+  display: flex;
+  gap: 2rem;
+}
+
+.messageInfo {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.messageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 80%;
+  gap: 1rem;
+}
+
+.messageContent p {
+  background-color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0 1rem 1rem 1rem;
+  max-width: max-content;
+}
+
+.message.owner {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.message.owner p {
+  background-color: orange;
+  color: white;
+  border-radius: 1rem 0 1rem 1rem;
 }
